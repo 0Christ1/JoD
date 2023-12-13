@@ -8,7 +8,7 @@ theButton.addEventListener("click", () => {
   theFooter.style.display = "block";
   introVideo.play();
   introVideo.onended = () => {
-    introVideo.style.display = "none"; // 隐藏视频或重置样式
-    window.location.href = "Homepage"; // 跳转到主界面
+    introVideo.style.display = "none"; 
+    window.location.href = "Homepage"; 
   };
 });
