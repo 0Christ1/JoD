@@ -9,6 +9,6 @@ theButton.addEventListener("click", () => {
   introVideo.play();
   introVideo.onended = () => {
     introVideo.style.display = "none"; // 隐藏视频或重置样式
-    window.location.href = "Homepage/index.html"; // 跳转到主界面
+    window.location.href = "Homepage"; // 跳转到主界面
   };
 });
