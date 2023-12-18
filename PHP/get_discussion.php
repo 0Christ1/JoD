@@ -37,9 +37,7 @@ if ($result_share->num_rows > 0) {
     } else {
         echo "<p>No comments yet.</p>";
     }
-
     echo "</div>";
-
     echo "<div style='margin: 20px;'>";
     echo "<h3>Leave your Comment</h3>";
     echo "<form action='../PHP/submit_comment.php' method='post'>";
