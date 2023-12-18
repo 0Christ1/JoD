@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   var searchButton = document.getElementById("dreamSearchButton");
   var searchInput = document.getElementById("dreamSearchInput");
@@ -30,3 +29,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+document.getElementById('sharingSection').addEventListener('Submit', function(event) {
+  var input = document.getElementById('title');
+  if (!input.value) {
+      input.setCustomValidity('Title is required.');
+  } else {
+      input.setCustomValidity(''); 
+  }
+});
+
+function loadDiscussion(id) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '../PHP/get_discussion.php?id=' + id, true);
+  xhr.onload = function() {
+      if (this.status == 200) {
+          document.getElementById('disContent').innerHTML = this.responseText;
+      }
+  }
+  xhr.send();
+}

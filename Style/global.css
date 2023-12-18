@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
 body {
   display: block;
   margin: 0;
@@ -200,9 +202,9 @@ body {
   display: none;
   position: fixed;
   box-sizing: border-box;
-  margin-top: 1vh;
-  width: 898px;
-  height: 75vh;
+  margin-top: 2vh;
+  width: 897px;
+  height: 73vh;
   background-color: white;
   border: 1px solid #ccc;
   padding: 20px;
@@ -210,9 +212,14 @@ body {
   z-index: 10;
 }
 
+.content-item a {
+  text-decoration: none;
+}
+
 #abtContent p {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-family: 'Heebo', sans-serif;
+  margin: 1.5vh;
+  font-size: 17px;
 }
 
 .content-item h1 {
@@ -311,6 +318,37 @@ body {
   background-color: #45a049;
 }
 
+textarea {
+  max-height: 48vh;
+  resize: vertical;
+}
+
+#expContent {
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table td,
+.table th {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+.table th {
+  font-weight: 700;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+
+#creContent p{
+  text-align: center;
+}
 
 footer {
   position: absolute;
@@ -320,6 +358,6 @@ footer {
   background-color: #000000;
   color: white;
   text-align: center;
-  padding: 12px 0;
-  font-family: "Segoe UI", sans-serif;
+  padding: 12.5px 0;
+  font-family: Arial, sans-serif;
 }

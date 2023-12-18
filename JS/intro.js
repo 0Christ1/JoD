@@ -9,6 +9,6 @@ theButton.addEventListener("click", () => {
   introVideo.play();
   introVideo.onended = () => {
     introVideo.style.display = "none"; 
-    window.location.href = "Homepage"; 
+    window.location.href = "Homepage/index.php"; 
   };
 });
